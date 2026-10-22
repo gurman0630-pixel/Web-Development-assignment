@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+h1{
+    text-align: center;
+    color: red;
+    margin: 30px;
+}
+h2{
+    text-align: center;
+}
+button {
+    background-color: navy;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
