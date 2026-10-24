@@ -1,0 +1,134 @@
+body {
+    background-color:  #0b1120;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #f8fafc;
+}
+.page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 24px;
+    box-sizing: border-box;
+}
+.profile-card {
+    background-color:  #111c30;
+    width: 100%;
+    max-width: 350px;
+    padding: 32px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #263449;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    line-height: 1.6;
+}
+.profile-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 18px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+.profile-card h1 {
+  color: #f8fafc;
+    font-size: 28px;
+    margin: 10px 0;
+}
+.profile-card p {
+    color: #cbd5e1;
+}
+.profile-card h3 {
+    color: #2563eb;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.intro {
+    color: #f9f9f9;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.profile-card h2 {
+    color:whitesmoke;
+    font-size: 20px;
+    margin-top: 24px;
+    
+}
+
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.skills-list li {
+    background-color: #1e293b;
+    color:  #bae6fd;
+    border: 1px solid #334155;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+
+.contact-button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+   transition: background-color 0.3s ease, transform 0.3s ease;
+   
+}
+
+
+.contact-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(14, 165, 233, 0.3);
+}
+
+
+.contact-button:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 3px;
+}
+
+
+@media (max-width: 480px) {
+    .page-container {
+        padding: 16px;
+    }
+
+    .profile-card {
+        padding: 22px;
+    }
+
+    .profile-card h1 {
+        font-size: 24px;
+    }
+
+    .profile-card h3 {
+        font-size: 14px;
+    }
+}
