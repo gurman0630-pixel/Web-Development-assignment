@@ -1,0 +1,173 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: darkslategray;
+    background-color: white;
+    line-height: 1.6;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background-color: white;
+    box-shadow: 0 2px 8px lightgray;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.landing-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.landing-nav a {
+    color: darkslategray;
+    text-decoration: none;
+}
+
+.landing-nav a:hover {
+    color: blue;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: aliceblue;
+}
+
+.eyebrow {
+    color: blue;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: darkblue;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: darkslategray;
+}
+
+.features {
+    padding: 70px 6%;
+    text-align: center;
+}
+
+.features h2,
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: darkblue;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature-card {
+    padding: 30px 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+    color: darkblue;
+}
+
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: lightcyan;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .site-header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .landing-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 65px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .features {
+        padding: 45px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .site-header {
+        padding: 18px 12px;
+    }
+}
