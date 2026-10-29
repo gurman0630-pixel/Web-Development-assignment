@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <h2>Student Portal</h2>
+        <span>Academic Performance</span>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <p class="eyebrow">ACADEMIC TOOLS</p>
+            <h1>Student Marks Calculator</h1>
+            <p>Enter your marks to calculate your academic performance.</p>
+        </section>
+
+        <section class="calculator">
+            <h2>Student Details</h2>
+
+            <form id="marks-form">
+                <div class="form-group">
+                    <label for="student-name">Student Name</label>
+                    <input
+                        type="text"
+                        id="student-name"
+                        placeholder="Enter your name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="maths">Mathematics (out of 100)</label>
+                    <input
+                        type="number"
+                        id="maths"
+                        placeholder="Enter marks"
+                        min="0"
+                        max="100"
+                        step="any"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="science">Science (out of 100)</label>
+                    <input
+                        type="number"
+                        id="science"
+                        placeholder="Enter marks"
+                        min="0"
+                        max="100"
+                        step="any"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="english">English (out of 100)</label>
+                    <input
+                        type="number"
+                        id="english"
+                        placeholder="Enter marks"
+                        min="0"
+                        max="100"
+                        step="any"
+                        required
+                    >
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="calculate-button">
+                        Calculate Result
+                    </button>
+                    <button type="reset" class="reset-button">
+                        Reset
+                    </button>
+                </div>
+            </form>
+
+            <div id="message" class="message" role="status" aria-live="polite"></div>
+
+            <section id="result-card" class="result-card" hidden>
+                <h2>Performance Report</h2>
+                <p id="result-name" class="student-result-name"></p>
+
+                <div class="result-grid">
+                    <div class="result-box">
+                        <span>Total Marks</span>
+                        <strong id="total-marks">0 / 300</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Average</span>
+                        <strong id="average-marks">0%</strong>
+                    </div>
+
+                    <div class="result-box">
+                        <span>Percentage</span>
+                        <strong id="percentage">0%</strong>
+                    </div>
+                </div>
+
+                <div class="subject-results">
+                    <h3>Subject Performance</h3>
+                    <p id="maths-result"></p>
+                    <p id="science-result"></p>
+                    <p id="english-result"></p>
+                </div>
+
+                <div class="status-section">
+                    <span>Final Status</span>
+                    <strong id="final-status"></strong>
+                </div>
+
+                <p class="grading-note">
+                    Rule: A student passes only if every subject has at least 40 marks.
+                </p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student Portal | Assignment 15 | 2026</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: darkslategray;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 8%;
+    background-color: white;
+    box-shadow: 0 2px 8px lightgray;
+}
+
+.site-header h2 {
+    color: darkblue;
+    font-size: 22px;
+}
+
+.site-header span {
+    color: slategray;
+    font-size: 14px;
+}
+
+.container {
+    width: 90%;
+    max-width: 760px;
+    margin: 40px auto;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.eyebrow {
+    color: blue;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.intro h1 {
+    color: darkblue;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.intro > p:last-child {
+    color: slategray;
+}
+
+.calculator {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px lightgray;
+}
+
+.calculator > h2,
+.result-card > h2 {
+    color: darkblue;
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid silver;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+}
+
+.form-group input:focus {
+    outline: 2px solid cornflowerblue;
+    border-color: blue;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+button {
+    padding: 13px 18px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.calculate-button {
+    flex: 1;
+    background-color: blue;
+    color: white;
+}
+
+.calculate-button:hover {
+    background-color: darkblue;
+}
+
+.reset-button {
+    background-color: gainsboro;
+    color: darkslategray;
+}
+
+.reset-button:hover {
+    background-color: lightgray;
+}
+
+.message {
+    margin-top: 15px;
+    color: firebrick;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.result-card {
+    margin-top: 28px;
+    padding: 22px;
+    background-color: ghostwhite;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.student-result-name {
+    margin-bottom: 18px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.result-box {
+    padding: 16px 10px;
+    background-color: aliceblue;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.result-box span {
+    display: block;
+    color: slategray;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.result-box strong {
+    color: darkblue;
+    font-size: 18px;
+}
+
+.subject-results {
+    margin-top: 24px;
+}
+
+.subject-results h3 {
+    margin-bottom: 10px;
+    color: darkblue;
+}
+
+.subject-results p {
+    padding: 8px 0;
+    border-bottom: 1px solid gainsboro;
+}
+
+.status-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-top: 22px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.status-section span {
+    font-weight: bold;
+}
+
+.status-section strong {
+    font-size: 17px;
+}
+
+.pass {
+    color: green;
+}
+
+.fail {
+    color: firebrick;
+}
+
+.grading-note {
+    margin-top: 15px;
+    color: slategray;
+    font-size: 12px;
+}
+
+footer {
+    padding: 22px 15px;
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    font-size: 13px;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .site-header {
+        padding: 16px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container {
+        width: 92%;
+        margin: 25px auto;
+    }
+
+    .intro h1 {
+        font-size: 27px;
+    }
+
+    .calculator {
+        padding: 20px 16px;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .result-box {
+        text-align: left;
+        padding: 12px;
+    }
+
+    .result-box span {
+        margin-bottom: 3px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .status-section {
+        align-items: flex-start;
+    }
+}
