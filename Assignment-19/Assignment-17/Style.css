@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+header {
+    padding: 45px 20px;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+header h1 {
+    margin: 8px 0;
+    font-size: 34px;
+}
+
+.eyebrow {
+    color: lightblue;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: 35px auto;
+}
+
+.intro {
+    margin-bottom: 25px;
+}
+
+.intro h2 {
+    color: darkblue;
+    margin-bottom: 5px;
+}
+
+.problem-card {
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px lightgray;
+}
+
+.problem-card h3 {
+    color: darkblue;
+    margin-bottom: 8px;
+}
+
+.problem-card p {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid silver;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 11px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: ghostwhite;
+    border: 1px solid gainsboro;
+    border-radius: 7px;
+    font-family: Consolas, monospace;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: darkslategray;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .problem-card {
+        padding: 18px;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
