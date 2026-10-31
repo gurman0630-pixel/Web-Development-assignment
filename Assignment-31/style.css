@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+.form, .summary, .cart-item {
+    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px lightgray;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border: 1px solid silver;
+    border-radius: 7px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.cart-item h3 {
+    color: royalblue;
+}
+
+.summary {
+    background-color: honeydew;
+}
+
+#message {
+    color: darkgreen;
+    font-weight: bold;
+}
