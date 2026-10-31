@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+.product-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px lightgray;
+}
+
+.product-card h2 {
+    color: royalblue;
+}
+
+.product-card h3 {
+    color: darkgreen;
+    border-bottom: 1px solid silver;
+    padding-bottom: 7px;
+}
+
+.product-card p {
+    line-height: 1.6;
+}
+
+li {
+    margin: 8px 0;
+}
