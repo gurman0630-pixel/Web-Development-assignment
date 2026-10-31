@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px lightgray;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+h2 {
+    color: royalblue;
+    margin-top: 25px;
+}
+
+pre {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+#totalResult {
+    background-color: honeydew;
+    padding: 15px;
+    border-radius: 8px;
+}
