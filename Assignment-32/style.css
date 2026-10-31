@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    color: navy;
+}
+
+.form, .profile-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    box-shadow: 0 4px 12px lightgray;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid silver;
+    border-radius: 7px;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.profile-card h2 {
+    color: royalblue;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skills span {
+    background-color: lightblue;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+pre {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
