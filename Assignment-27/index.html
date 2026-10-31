@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Cleaning Utility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Text Cleaning Utility</h1>
+        <p>Enter text to clean and format your form inputs.</p>
+
+        <form id="cleanForm">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input id="email" type="text" placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" placeholder="Enter phone number">
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="4" placeholder="Enter message"></textarea>
+
+            <button type="submit">Clean Text</button>
+        </form>
+
+        <section class="result">
+            <h2>Cleaned Results</h2>
+            <p id="cleanedName"></p>
+            <p id="cleanedEmail"></p>
+            <p id="cleanedPhone"></p>
+            <p id="cleanedMessage"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
