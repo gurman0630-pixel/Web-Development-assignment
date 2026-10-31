@@ -1,0 +1,59 @@
+{
+    "catalogueName": "Tech Store Catalogue",
+    "lastUpdated": "2026-10-31",
+    "currency": "INR",
+    "products": [
+        {
+            "id": 101,
+            "name": "Laptop",
+            "category": "Electronics",
+            "price": 55000,
+            "stock": 10,
+            "specifications": {
+                "processor": "AMD Ryzen 5",
+                "ram": "12 GB",
+                "storage": "512 GB SSD"
+            },
+            "features": ["Wi-Fi", "Bluetooth", "Backlit Keyboard"]
+        },
+        {
+            "id": 102,
+            "name": "Headphones",
+            "category": "Accessories",
+            "price": 1500,
+            "stock": 25,
+            "specifications": {
+                "type": "Wireless",
+                "battery": "20 Hours",
+                "connectivity": "Bluetooth"
+            },
+            "features": ["Noise Reduction", "Microphone"]
+        },
+        {
+            "id": 103,
+            "name": "Keyboard",
+            "category": "Accessories",
+            "price": 1200,
+            "stock": 15,
+            "specifications": {
+                "type": "Mechanical",
+                "connection": "USB",
+                "layout": "Full Size"
+            },
+            "features": ["RGB Lighting", "Multimedia Keys"]
+        },
+        {
+            "id": 104,
+            "name": "T-Shirt",
+            "category": "Clothing",
+            "price": 700,
+            "stock": 40,
+            "specifications": {
+                "material": "Cotton",
+                "size": "Medium",
+                "color": "Black"
+            },
+            "features": ["Comfortable", "Machine Washable"]
+        }
+    ]
+}
