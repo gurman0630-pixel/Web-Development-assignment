@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Dataset Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Product Dataset Analyzer</h1>
+        <p>Filter products and view dataset summaries.</p>
+
+        <div class="filters">
+            <input id="search" type="text" placeholder="Search products">
+
+            <select id="category">
+                <option value="all">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Clothing">Clothing</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+            <input id="maxPrice" type="number" placeholder="Maximum price">
+
+            <button onclick="filterProducts()">Apply Filters</button>
+            <button onclick="resetFilters()">Reset</button>
+        </div>
+
+        <section class="summary">
+            <div class="card">
+                <h3>Total Products</h3>
+                <p id="totalProducts">0</p>
+            </div>
+            <div class="card">
+                <h3>Average Price</h3>
+                <p id="averagePrice">₹0</p>
+            </div>
+            <div class="card">
+                <h3>Total Stock</h3>
+                <p id="totalStock">0</p>
+            </div>
+        </section>
+
+        <h2>Product Results</h2>
+        <div id="productList" class="product-list"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
