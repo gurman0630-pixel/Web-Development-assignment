@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope and Hoisting Worksheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>JavaScript Scope & Hoisting</h1>
+        <p>Predict the output and check your understanding.</p>
+
+        <section class="question">
+            <h3>Question 1: Global Scope</h3>
+            <pre>let name = "Gurman";
+function greet() {
+    console.log(name);
+}
+greet();</pre>
+            <input id="answer1" placeholder="Your prediction">
+            <button onclick="checkAnswer(1)">Check Answer</button>
+            <p id="feedback1"></p>
+            <button class="explain" onclick="showExplanation(1)">
+                Show Explanation
+            </button>
+            <p id="explanation1"></p>
+        </section>
+
+        <section class="question">
+            <h3>Question 2: Function Scope</h3>
+            <pre>function test() {
+    let age = 20;
+}
+console.log(age);</pre>
+            <input id="answer2" placeholder="Your prediction">
+            <button onclick="checkAnswer(2)">Check Answer</button>
+            <p id="feedback2"></p>
+            <button class="explain" onclick="showExplanation(2)">
+                Show Explanation
+            </button>
+            <p id="explanation2"></p>
+        </section>
+
+        <section class="question">
+            <h3>Question 3: Var Hoisting</h3>
+            <pre>console.log(score);
+var score = 90;</pre>
+            <input id="answer3" placeholder="Your prediction">
+            <button onclick="checkAnswer(3)">Check Answer</button>
+            <p id="feedback3"></p>
+            <button class="explain" onclick="showExplanation(3)">
+                Show Explanation
+            </button>
+            <p id="explanation3"></p>
+        </section>
+
+        <section class="question">
+            <h3>Question 4: Let Hoisting</h3>
+            <pre>console.log(value);
+let value = 50;</pre>
+            <input id="answer4" placeholder="Your prediction">
+            <button onclick="checkAnswer(4)">Check Answer</button>
+            <p id="feedback4"></p>
+            <button class="explain" onclick="showExplanation(4)">
+                Show Explanation
+            </button>
+            <p id="explanation4"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
