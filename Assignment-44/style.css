@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+.container > p {
+    text-align: center;
+    color: dimgray;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: royalblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 10px 0;
+    padding: 12px;
+    background-color: aliceblue;
+    border-radius: 6px;
+}
+
+.task-text {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit {
+    background-color: orange;
+}
+
+.complete {
+    background-color: green;
+}
+
+.delete {
+    background-color: crimson;
+}
+
+#taskCount {
+    color: darkblue;
+    font-weight: bold;
+}
+
+#message {
+    color: green;
+}
