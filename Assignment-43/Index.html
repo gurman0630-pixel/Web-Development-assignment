@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Test Matrix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Validation Test Matrix</h1>
+        <p>Contact Form and To-Do Application Testing</p>
+
+        <div class="summary">
+            <div class="box">
+                <h2 id="total">0</h2>
+                <p>Total Tests</p>
+            </div>
+            <div class="box">
+                <h2 id="passed">0</h2>
+                <p>Passed</p>
+            </div>
+            <div class="box">
+                <h2 id="failed">0</h2>
+                <p>Failed</p>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Test ID</th>
+                        <th>Test Scenario</th>
+                        <th>Input</th>
+                        <th>Expected Result</th>
+                        <th>Actual Result</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="testTable"></tbody>
+            </table>
+        </div>
+
+        <h2>Testing Documentation</h2>
+
+        <label for="notes">Testing observations:</label>
+        <textarea id="notes" placeholder="Write your testing observations..."></textarea>
+
+        <button id="saveButton">Save Test Report</button>
+        <p id="message" aria-live="polite"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

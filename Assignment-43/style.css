@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+h1, .container > p {
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.box {
+    flex: 1;
+    min-width: 120px;
+    padding: 15px;
+    text-align: center;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+.box h2 {
+    color: royalblue;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 850px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid lightgray;
+    text-align: left;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+select {
+    padding: 7px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    margin-top: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-top: 15px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+#message {
+    color: green;
+}
