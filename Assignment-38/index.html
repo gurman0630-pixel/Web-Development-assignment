@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Interactive Profile</h1>
+
+        <section class="profile-card">
+            <div class="avatar" aria-hidden="true">GS</div>
+
+            <h2>Gurman Singh</h2>
+            <p>BCA Artificial Intelligence Student</p>
+
+            <div class="status-area">
+                <p id="statusText" aria-live="polite">Status: Offline</p>
+                <span id="statusIndicator" class="status-indicator offline"
+                      aria-hidden="true"></span>
+            </div>
+
+            <button id="statusButton" aria-pressed="false">
+                Go Online
+            </button>
+
+            <button id="themeButton" aria-pressed="false">
+                Enable Dark Mode
+            </button>
+
+            <button id="detailsButton"
+                    aria-expanded="false"
+                    aria-controls="profileDetails">
+                Show Details
+            </button>
+
+            <div id="profileDetails" hidden>
+                <h3>Skills</h3>
+                <p>Python, Java, JavaScript, HTML, CSS</p>
+                <h3>Interests</h3>
+                <p>Artificial Intelligence and Web Development</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

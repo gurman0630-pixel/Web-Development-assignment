@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    color: navy;
+    margin: 0;
+    padding: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.profile-card {
+    background-color: white;
+    padding: 30px;
+    margin-top: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px lightgray;
+}
+
+.avatar {
+    width: 85px;
+    height: 85px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    background-color: royalblue;
+    color: white;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.status-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.status-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.offline {
+    background-color: red;
+}
+
+.online {
+    background-color: green;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+button:focus-visible {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
+
+#profileDetails {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
+#profileDetails[hidden] {
+    display: none;
+}
+
+.dark-mode {
+    background-color: darkslategray;
+    color: white;
+}
+
+.dark-mode .profile-card {
+    background-color: dimgray;
+    color: white;
+}
+
+.dark-mode #profileDetails {
+    background-color: slategray;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+}
