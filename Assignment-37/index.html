@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Content Updater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Profile Content Updater</h1>
+
+        <section class="card">
+            <h2>Update Your Profile</h2>
+
+            <label for="nameInput">Name</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+
+            <label for="courseInput">Course</label>
+            <input type="text" id="courseInput" placeholder="Enter your course">
+
+            <label for="bioInput">Bio</label>
+            <textarea id="bioInput" rows="4" placeholder="Write your bio"></textarea>
+
+            <button id="updateButton">Update Profile</button>
+            <p id="message"></p>
+        </section>
+
+        <section class="card profile">
+            <h2>My Profile</h2>
+            <h3 id="displayName">Gurman Singh</h3>
+            <p id="displayCourse">BCA Artificial Intelligence</p>
+            <p id="displayBio">I am learning web development and JavaScript.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
