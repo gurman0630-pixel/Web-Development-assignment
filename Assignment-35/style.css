@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 25px;
+}
+
+#mainContainer {
+    max-width: 850px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px lightgray;
+}
+
+h2 {
+    color: royalblue;
+}
+
+#studentCard {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+.result-item {
+    background-color: aliceblue;
+    padding: 12px;
+    margin: 10px 0;
+    border-left: 4px solid royalblue;
+    border-radius: 5px;
+}
+
+.result-item p {
+    color: darkgreen;
+    margin-bottom: 0;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+}
