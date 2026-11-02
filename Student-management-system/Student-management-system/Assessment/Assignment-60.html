@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Search Challenge</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: aliceblue;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 25px;
+            background: white;
+            border-radius: 12px;
+        }
+
+        h1 {
+            color: navy;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        input, select {
+            padding: 12px;
+            border: 1px solid silver;
+            border-radius: 6px;
+            min-width: 0;
+        }
+
+        input {
+            flex: 1;
+        }
+
+        .student-card {
+            padding: 15px;
+            margin: 12px 0;
+            background: aliceblue;
+            border-left: 4px solid royalblue;
+            border-radius: 8px;
+        }
+
+        .student-card h3 {
+            margin: 0 0 8px;
+            color: navy;
+        }
+
+        .empty {
+            color: crimson;
+        }
+
+        @media (max-width: 550px) {
+            .controls {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Student Search Challenge</h1>
+        <p>Search students by name or roll number and filter by course.</p>
+
+        <div class="controls">
+            <input
+                type="search"
+                id="search"
+                placeholder="Search name or roll number..."
+            >
+
+            <select id="courseFilter">
+                <option value="all">All Courses</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="MCA">MCA</option>
+            </select>
+        </div>
+
+        <p id="resultCount" aria-live="polite"></p>
+        <section id="studentContainer"></section>
+    </main>
+
+    <script>
+        const students = [
+            {
+                name: "Rahul Sharma",
+                roll: "BCA001",
+                course: "BCA",
+                semester: 3
+            },
+            {
+                name: "Priya Verma",
+                roll: "BBA002",
+                course: "BBA",
+                semester: 2
+            },
+            {
+                name: "Aman Singh",
+                roll: "BCA003",
+                course: "BCA",
+                semester: 1
+            },
+            {
+                name: "Neha Gupta",
+                roll: "MCA004",
+                course: "MCA",
+                semester: 4
+            }
+        ];
+
+        const search = document.getElementById("search");
+        const courseFilter = document.getElementById("courseFilter");
+        const container = document.getElementById("studentContainer");
+        const resultCount = document.getElementById("resultCount");
+
+        function renderStudents() {
+            const query = search.value.trim().toLowerCase();
+            const selectedCourse = courseFilter.value;
+
+            const filteredStudents = students.filter(function(student) {
+                const matchesSearch =
+                    student.name.toLowerCase().includes(query) ||
+                    student.roll.toLowerCase().includes(query);
+
+                const matchesCourse =
+                    selectedCourse === "all" ||
+                    student.course === selectedCourse;
+
+                return matchesSearch && matchesCourse;
+            });
+
+            container.replaceChildren();
+
+            resultCount.textContent =
+                "Students found: " + filteredStudents.length;
+
+            if (filteredStudents.length === 0) {
+                const empty = document.createElement("p");
+                empty.className = "empty";
+                empty.textContent = "No matching students found.";
+                container.appendChild(empty);
+                return;
+            }
+
+            filteredStudents.forEach(function(student) {
+                const card = document.createElement("article");
+                card.className = "student-card";
+
+                const name = document.createElement("h3");
+                name.textContent = student.name;
+
+                const roll = document.createElement("p");
+                roll.textContent = "Roll Number: " + student.roll;
+
+                const course = document.createElement("p");
+                course.textContent = "Course: " + student.course;
+
+                const semester = document.createElement("p");
+                semester.textContent = "Semester: " + student.semester;
+
+                card.append(name, roll, course, semester);
+                container.appendChild(card);
+            });
+        }
+
+        search.addEventListener("input", renderStudents);
+        courseFilter.addEventListener("change", renderStudents);
+
+        renderStudents();
+    </script>
+</body>
+</html>
