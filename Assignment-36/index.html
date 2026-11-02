@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Element Selection Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1 id="mainHeading">DOM Element Selection</h1>
+
+        <section class="card">
+            <h2 class="section-title">Student Details</h2>
+
+            <p id="studentName" class="info">Name: Gurman Singh</p>
+            <p class="info">Course: BCA AI</p>
+            <p class="info">University: Invertis University</p>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Subjects</h2>
+
+            <ul id="subjectList">
+                <li class="subject">Java</li>
+                <li class="subject">Python</li>
+                <li class="subject">Web Development</li>
+                <li class="subject">Mathematics</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Selection Challenges</h2>
+
+            <button onclick="selectById()">Select by ID</button>
+            <button onclick="selectByClass()">Select by Class</button>
+            <button onclick="selectByTag()">Select by Tag</button>
+            <button onclick="selectByQuery()">Select by Query Selector</button>
+            <button onclick="selectAll()">Select All Subjects</button>
+            <button onclick="resetPage()">Reset</button>
+
+            <div id="output">
+                <p>Click a button to complete a challenge.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

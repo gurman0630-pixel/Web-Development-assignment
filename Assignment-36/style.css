@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px lightgray;
+}
+
+.section-title {
+    color: royalblue;
+}
+
+.info {
+    padding: 8px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.subject {
+    margin: 10px 0;
+    padding: 8px;
+}
+
+button {
+    padding: 11px 15px;
+    margin: 5px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: darkgreen;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
