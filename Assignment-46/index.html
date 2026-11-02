@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persistent Settings Panel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Settings Panel</h1>
+        <p>Your preferences will be saved automatically.</p>
+
+        <label for="theme">Choose Theme:</label>
+        <select id="theme">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+        </select>
+
+        <label for="fontSize">Choose Font Size:</label>
+        <select id="fontSize">
+            <option value="16">Small</option>
+            <option value="20">Medium</option>
+            <option value="24">Large</option>
+        </select>
+
+        <button id="resetButton">Reset Settings</button>
+
+        <p id="message" aria-live="polite"></p>
+
+        <div class="preview">
+            <h2>Preview</h2>
+            <p>Your saved settings will be applied here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
