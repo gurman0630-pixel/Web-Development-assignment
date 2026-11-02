@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    color: darkblue;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 8px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book {
+    background-color: aliceblue;
+    padding: 15px;
+    margin-top: 12px;
+    border-radius: 7px;
+}
+
+.delete {
+    background-color: crimson;
+}
+
+#message {
+    color: green;
+}
