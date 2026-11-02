@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.container {
+    max-width: 550px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: royalblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#output {
+    color: green;
+}
