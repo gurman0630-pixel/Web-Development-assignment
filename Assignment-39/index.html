@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="heading">DOM Manipulation Practice</h1>
+        <p id="description">Learn JavaScript DOM operations.</p>
+
+        <div class="controls">
+            <button id="changeText">Change Text</button>
+            <button id="changeColor">Change Color</button>
+        </div>
+
+        <h2>My Task List</h2>
+
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <ul id="taskList"></ul>
+
+        <p id="message" aria-live="polite"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
